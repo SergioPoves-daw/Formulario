@@ -7,6 +7,7 @@ h1 {
     margin: 0px 0px 20px 180px;
 }
 
+/* FORMULARIO */
 form {
     margin: 0px 160px 0px 160px;
     padding: 20px;
@@ -41,11 +42,19 @@ input[type=submit] {
     width: 100px;
 }
 
-textarea {
-    margin: 0px 0px 0px 10px;
+label {
+    display: inline-block;
+    width: 660px; /* Los radio ocupan 14px de width pero tienen 20 margin-left -> 661w+14w+20m = 695px*/
+    /*margin: 0px 650px 0px 0px;*/
 }
 
-/* Tabla del horario*/
+textarea {
+    margin: 0px 0px 0px 10px;
+    padding: 5px;
+}
+/* FIN FORMULARIO */
+
+/* TABLA DEL HORARIO */
 table {
     width: 70%;
     margin: auto;
@@ -128,13 +137,4 @@ footer {
     background-color: rgba(255, 255, 255, 0);
     border: none;
 }
-
-label {
-    display: inline-block;
-    width: 660px; /* Los radio ocupan 14px de width pero tienen 20 margin-left -> 661w+14w+20m = 695px*/
-    /*margin: 0px 650px 0px 0px;*/
-}
-
-textarea {
-    padding: 5px;
-}
+/* FIN TABLA DEL HORARIO */
