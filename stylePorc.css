@@ -1,6 +1,7 @@
 body {
     background-color: lightgreen;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 1920px;
 }
 
 h1 {
@@ -12,7 +13,7 @@ form {
     margin: 0px 160px 0px 160px;
     padding: 20px;
     border: solid 2px black;
-    width: 700px;
+    width: 36.45%; /* (700w form * 100) / 1920w body = 36.45% */
     background-color: rgb(175, 255, 175);
     font-size: 12px;
 }
@@ -39,12 +40,13 @@ input[type=radio] {
 input[type=submit] {
     border: solid 2px black;
     padding: 5px;
-    width: 100px;
+    width: 14.28%; /* (100w input * 100) / 700 w form = 14.28% */
 }
 
 label {
     display: inline-block;
-    width: 660px; /* Los radio ocupan 14px de width pero tienen 20 margin-left -> 661w+14w+20m = 695px*/
+    width: 94.28%; /* (660w label * 100) / 700 w form =  94.28%*/
+    /* Los radio ocupan 14px de width pero tienen 20 margin-left -> 661w+14w+20m = 695px*/
     /*margin: 0px 650px 0px 0px;*/
 }
 
